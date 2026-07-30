@@ -49,6 +49,19 @@ Use [`agents/context-packs.md`](agents/context-packs.md) to select the minimal r
 - [Mailchimp Content Style Guide](https://styleguide.mailchimp.com/)
 - [GOV.UK Service Manual](https://www.gov.uk/service-manual)
 
+## Public repository references
+
+The following repositories informed this template's structure or the fictional Northstar example. They are cited for credit and further study; no third-party prose, assets, or code has been copied into this repository.
+
+- [brandbook-md/brandbook.md](https://github.com/brandbook-md/brandbook.md) — package structure, root router, file index, and citable anchor rules.
+- [github/docs](https://github.com/github/docs) — content model, editorial governance, linting, and search findability.
+- [GoogleChrome/web.dev](https://github.com/GoogleChrome/web.dev) — design tokens, accessible web content, and measurement practices.
+- [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) — accessible visual-system and component-governance patterns.
+- [microsoft/fluentui](https://github.com/microsoft/fluentui) — interaction, visual-language, and accessibility patterns at scale.
+- [salesforce-ux/design-system](https://github.com/salesforce-ux/design-system) — enterprise UI consistency and design-system documentation.
+
+See [`examples/REFERENCES.md`](examples/REFERENCES.md) for the per-module source map and licence notes.
+
 ## Agent consumption
 
 1. Load `BRANDBOOK.md` first.
