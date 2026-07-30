@@ -61,6 +61,12 @@ The profile adds a versioned [type registry](profiles/production/type-registry.m
 
 The governance tranche adds lifecycle IDs, asset/locale scope, untrusted-input rules, and portable [safety evaluation cases](evals/safety-cases.md).
 
+## Adoption paths
+
+- **Core:** use the Markdown package and context packs for human-reviewed content work.
+- **Production Profile:** require schema validation, typed contracts, safety fixtures, and a policy gateway.
+- **Adapter:** implement the vendor-neutral [adapter interface](adapters/README.md) to map the portable publication record to a CMS, DAM, analytics service, or agent runtime.
+
 ## Tool-agnostic delivery
 
 [`delivery/publication-contract.md`](delivery/publication-contract.md) defines the content record an agent must prepare before a CMS handoff. A CMS-specific adapter may map that record to fields, but the playbook itself remains portable.

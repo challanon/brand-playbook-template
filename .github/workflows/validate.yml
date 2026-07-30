@@ -18,3 +18,4 @@ jobs:
       - run: npm ci --prefix tools
       - run: node tools/validate.js .
       - run: npm run test:fixtures --prefix tools
+      - run: npm run test:safety --prefix tools

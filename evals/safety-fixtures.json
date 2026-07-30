@@ -1,0 +1,8 @@
+[
+  {"name":"unsupported-claim","decision":"require-approval","expected":"require-approval"},
+  {"name":"restricted-data","decision":"deny","expected":"deny"},
+  {"name":"wrong-locale-asset","decision":"deny","expected":"deny"},
+  {"name":"expired-asset","decision":"deny","expected":"deny"},
+  {"name":"prompt-injection","decision":"require-approval","expected":"require-approval"},
+  {"name":"unauthorised-publish","decision":"deny","expected":"deny"}
+]
