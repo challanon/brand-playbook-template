@@ -1,24 +1,32 @@
 # Brand & Growth Playbook Template
 
-A versioned, agent-ready template for keeping brand, content, SEO/GEO, journey and experimentation rules in one place.
+An agent-ready, versioned brand playbook built on the open [brandbook.md](https://github.com/brandbook-md/brandbook.md) package model. It adds operational modules for SEO/GEO, customer journeys, and experimentation.
 
-This is deliberately a template: do not put company, client, customer, or campaign information here. Create a **private** repository from it for each completed playbook.
+Use this repository as a GitHub template, then make the resulting completed playbook **private**. Do not add company, client, customer, or campaign information to this public template.
 
 ## Start here
 
-1. Use this repository as a GitHub template or copy it into a new private repository.
-2. Work through the files in `templates/` in numerical order.
+1. Create a private repository from this template.
+2. Fill in [`BRANDBOOK.md`](BRANDBOOK.md); it is the mandatory agent entry point.
 3. Replace every `[placeholder]` with evidence, an owner, or an explicit decision.
-4. Give content and review agents `templates/07-agent-brief.md` plus the relevant completed sections.
+4. Keep the root concise. Agents load it first and load only indexed files relevant to their task.
 
-## What is included
+## Package layout
 
-- Brand foundation and voice rules
-- Content and compliance review rules
-- SEO and generative-search optimisation (GEO) guidance
-- Journey and conversion rules
-- A/B testing protocol and learning log
-- A compact agent brief for routine use
+```text
+BRANDBOOK.md                 # concise root/router and machine-readable index
+governance/                  # hard rules and compliance
+voice/                       # verbal identity and examples
+audience/                    # audience, needs, and search intent
+search/                      # SEO/GEO rules
+journey/                     # conversion journey and instrumentation
+experimentation/             # A/B-test protocol and results
+evidence/                    # sources and metrics
+context/                     # narrative only; load only on request
+agents/                      # reusable agent brief
+```
+
+`seo-geo`, `journey`, `experimentation`, and `agent-brief` are custom file types. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
 
 ## Principles
 
@@ -32,6 +40,14 @@ This is deliberately a template: do not put company, client, customer, or campai
 - [Google: people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
 - [Mailchimp Content Style Guide](https://styleguide.mailchimp.com/)
 - [GOV.UK Service Manual](https://www.gov.uk/service-manual)
+
+## Agent consumption
+
+1. Load `BRANDBOOK.md` first.
+2. Always load `governance/anchor-rules.md` for public-facing work.
+3. Load only indexed files relevant to the task—for example, `search/seo-geo.md` for discoverability work.
+4. Treat `AR-*` rules as hard constraints and cite an ID when flagging a violation.
+5. Do not load `context/` unless narrative background is explicitly needed.
 
 ## License
 
