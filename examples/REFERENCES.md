@@ -17,5 +17,6 @@ These are implementation references, not text to copy. Each Northstar example is
 | `evidence/sources-and-metrics.md` | [GitHub Docs content model](https://github.com/github/docs/blob/main/content/contributing/style-guide-and-content-model/about-the-content-model.md) | Structured, maintainable content metadata |
 | `context/story.md` | [brandbook-md Lumen story](https://github.com/brandbook-md/brandbook.md/blob/main/examples/lumen/context/story.md) | Keep narrative separate from operating rules |
 | `agents/agent-brief.md` | [GitHub Docs style-guide instructions](https://github.com/github/docs/blob/main/.github/instructions/style-guide-summary.instructions.md) | Compact, task-ready instruction format |
+| `agents/context-packs.md` | [brandbook.md specification](https://github.com/brandbook-md/brandbook.md/blob/main/spec/brandbook-spec.md) | Progressive disclosure and task-specific loading |
 
 Known licences: `github/docs` is CC-BY-4.0; `alphagov/service-manual-frontend` is MIT. Other sources should be checked before reuse; this repository links to them rather than reproducing them.

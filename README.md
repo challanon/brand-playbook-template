@@ -34,6 +34,8 @@ agents/                      # reusable agent brief
 
 `seo-geo`, `journey`, `experimentation`, and `agent-brief` are custom file types. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
 
+Use [`agents/context-packs.md`](agents/context-packs.md) to select the minimal relevant files for common tasks without copying their contents.
+
 ## Principles
 
 - Be useful to people first; optimise for search only in service of that.

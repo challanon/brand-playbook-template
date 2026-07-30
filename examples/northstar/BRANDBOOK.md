@@ -26,6 +26,7 @@ files:
   - {path: experimentation/experiment-register.md, type: experimentation, summary: "Test decisions"}
   - {path: evidence/sources-and-metrics.md, type: evidence, summary: "Evidence register"}
   - {path: agents/agent-brief.md, type: agent-brief, summary: "Agent instructions"}
+  - {path: agents/context-packs.md, type: context-packs, summary: "Task context routing"}
 ---
 
 # Northstar Analytics

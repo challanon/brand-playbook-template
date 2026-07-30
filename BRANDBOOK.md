@@ -48,6 +48,9 @@ files:
   - path: agents/agent-brief.md
     type: agent-brief
     summary: "Compact brief for content and review agents"
+  - path: agents/context-packs.md
+    type: context-packs
+    summary: "Minimal file sets for common agent tasks"
 ---
 
 # [Brand name]: BRANDBOOK.md
@@ -97,3 +100,4 @@ files:
 | `experimentation/experiment-register.md` | experimentation | Tests and optimisation |
 | `evidence/sources-and-metrics.md` | evidence | Claims and measurement |
 | `agents/agent-brief.md` | agent-brief | Routine agent tasks |
+| `agents/context-packs.md` | context-packs | Selecting minimal task context |
