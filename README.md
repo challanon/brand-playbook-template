@@ -19,25 +19,25 @@ Use this repository as a GitHub template, then make the resulting completed play
 
 ```text
 BRANDBOOK.md                 # concise root/router and machine-readable index
-governance/                  # hard rules and compliance
-assets/                      # visual identity and approved design assets
+governance/                  # anchor rules, compliance, and data handling
+assets/                      # visual identity, asset register, and approved assets
 voice/                       # verbal identity and examples
 messaging/                   # positioning, proof, and messaging pillars
 audience/                    # audience, needs, and search intent
-search/                      # SEO/GEO rules
+search/                      # SEO/GEO and technical delivery rules
 journey/                     # conversion journey and instrumentation
-experimentation/             # A/B-test protocol and results
-evidence/                    # sources and metrics
+experimentation/             # A/B-test protocol, allocation, and results
+evidence/                    # sources, claim definitions, and metrics
 context/                     # narrative only; load only on request
-agents/                      # reusable agent brief
-delivery/                    # CMS-agnostic publication records
-locales/                     # market and language overrides
+agents/                      # reusable agent brief and task context packs
+delivery/                    # CMS-agnostic publication contract
+locales/                     # market, language, and legal overrides
 media/                       # video-production briefs and review gates
 schema/                      # playbook metadata schemas
 tools/                       # local validation utility
 ```
 
-`seo-geo`, `journey`, `experimentation`, and `agent-brief` are custom file types. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
+The template uses custom file types—`seo-geo`, `journey`, `experimentation`, `agent-brief`, `context-packs`, `asset-register`, `data-handling`, `publication-contract`, `locale`, and `video-production`. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
 
 Use [`agents/context-packs.md`](agents/context-packs.md) to select the minimal relevant files for common tasks without copying their contents.
 
