@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const fixtures = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'evals', 'safety-fixtures.json'), 'utf8'));
+const fixtures = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'spec', 'evals', 'safety-fixtures.json'), 'utf8'));
 let failed = false;
 for (const fixture of fixtures) {
   if (fixture.decision !== fixture.expected) {

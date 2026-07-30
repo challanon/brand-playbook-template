@@ -5,7 +5,7 @@ Adapters map a valid Production Profile package to a CMS, DAM, analytics service
 ## Required behaviour
 
 1. Read `BRANDBOOK.md`, then only indexed task-relevant files.
-2. Accept and emit the typed records in `contracts/`.
+2. Accept and emit the typed records in [`../contracts/`](../contracts/).
 3. Preserve evidence IDs, asset IDs, locale, rule findings, and approval state.
 4. Request a `policy-decision` before any capability beyond authorised read, draft, or review.
 5. Never mark a record published when policy requires approval or denies the action.

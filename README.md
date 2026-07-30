@@ -33,12 +33,17 @@ agents/                      # reusable agent brief and task context packs
 delivery/                    # CMS-agnostic publication contract
 locales/                     # market, language, and legal overrides
 media/                       # video-production briefs and review gates
-schema/                      # playbook metadata schemas
+examples/                    # fictional completed package and source map
+spec/                        # optional Production Profile and integration spec
+  production-profile/        # opt-in profile and type registry
+  contracts/                 # typed, tool-agnostic runtime contracts
+  schemas/                   # playbook metadata schemas
+  adapters/                  # vendor-neutral adapter interface
+  evals/                     # validator fixtures and conformance tests
 tools/                       # local validation utility
-profiles/                    # optional production-grade extensions
-contracts/                   # typed, tool-agnostic runtime contracts
-evals/                       # validator fixtures and conformance tests
 ```
+
+The root modules are the content a brand team fills in and an agent loads. [`spec/`](spec/) is for platform consumers that opt into the Production Profile; it is not routine brand context. `tools/` runs validation for either mode.
 
 The template uses custom file types—`seo-geo`, `journey`, `experimentation`, `agent-brief`, `context-packs`, `asset-register`, `data-handling`, `publication-contract`, `locale`, and `video-production`. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
 
@@ -55,17 +60,17 @@ Validation checks indexed files, root/secondary frontmatter, brand and file-type
 
 ## Optional Production Profile
 
-The Core template stays Markdown-first and portable. Teams that need stricter platform consumption can opt into [`profiles/production/`](profiles/production/) by adding `profile: production` to their root metadata.
+The Core template stays Markdown-first and portable. Teams that need stricter platform consumption can opt into [`spec/production-profile/`](spec/production-profile/) by adding `profile: production` to their root metadata.
 
-The profile adds a versioned [type registry](profiles/production/type-registry.md), schema-backed validation, fixtures, and the typed [contracts](contracts/) used between callers, agents, reviewers, policy gateways, and CMS adapters. It does not grant an agent permission to publish or access data; those decisions remain with the consuming runtime.
+The profile adds a versioned [type registry](spec/production-profile/type-registry.md), schema-backed validation, fixtures, and the typed [contracts](spec/contracts/) used between callers, agents, reviewers, policy gateways, and CMS adapters. It does not grant an agent permission to publish or access data; those decisions remain with the consuming runtime.
 
-The governance tranche adds lifecycle IDs, asset/locale scope, untrusted-input rules, and portable [safety evaluation cases](evals/safety-cases.md).
+The governance tranche adds lifecycle IDs, asset/locale scope, untrusted-input rules, and portable [safety evaluation cases](spec/evals/safety-cases.md).
 
 ## Adoption paths
 
 - **Core:** use the Markdown package and context packs for human-reviewed content work.
 - **Production Profile:** require schema validation, typed contracts, safety fixtures, and a policy gateway.
-- **Adapter:** implement the vendor-neutral [adapter interface](adapters/README.md) to map the portable publication record to a CMS, DAM, analytics service, or agent runtime.
+- **Adapter:** implement the vendor-neutral [adapter interface](spec/adapters/README.md) to map the portable publication record to a CMS, DAM, analytics service, or agent runtime.
 
 ## Tool-agnostic delivery
 

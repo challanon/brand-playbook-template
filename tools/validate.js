@@ -8,7 +8,7 @@ const root = path.resolve(process.argv[2] || '.');
 const findSupportRoot = (dir) => {
   let current = dir;
   while (current !== path.dirname(current)) {
-    if (fs.existsSync(path.join(current, 'schema', 'brandbook-root.schema.json'))) return current;
+    if (fs.existsSync(path.join(current, 'spec', 'schemas', 'brandbook-root.schema.json'))) return current;
     current = path.dirname(current);
   }
   return root;
@@ -26,12 +26,12 @@ const template = (value) => typeof value === 'string' && value.includes('[');
 const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
   const target = path.join(dir, entry.name);
   if (['.git', 'node_modules'].includes(entry.name)) return [];
-  if (root === dir && entry.name === 'evals') return [];
+  if (root === dir && entry.name === 'spec') return [];
   return entry.isDirectory() ? walk(target) : [target];
 });
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
-const loadSchema = (name) => JSON.parse(read(path.join(supportRoot, 'schema', name)));
+const loadSchema = (name) => JSON.parse(read(path.join(supportRoot, 'spec', 'schemas', name)));
 const validateRoot = ajv.compile(loadSchema('brandbook-root.schema.json'));
 const validateFile = ajv.compile(loadSchema('brandbook-file.schema.json'));
 const schemaErrors = (validate) => (validate.errors || []).map((error) => `${error.instancePath || '/'} ${error.message}`).join('; ');
@@ -55,8 +55,8 @@ for (const file of rootFiles) {
     if (childData.brand !== data.brand.slug) fail(child, `brand must equal ${data.brand.slug}`);
     if (childData.type !== entry.type) fail(child, `type must equal index type ${entry.type}`);
   }
-  if (data.profile === 'production' && !fs.existsSync(path.join(supportRoot, 'profiles', 'production', 'PROFILE.md'))) {
-    fail(file, 'production profile declared but profiles/production/PROFILE.md is missing');
+  if (data.profile === 'production' && !fs.existsSync(path.join(supportRoot, 'spec', 'production-profile', 'PROFILE.md'))) {
+    fail(file, 'production profile declared but spec/production-profile/PROFILE.md is missing');
   }
 }
 
@@ -66,7 +66,7 @@ for (const file of walk(root).filter((file) => file.endsWith('.json') && file.in
 
 for (const file of walk(root).filter((file) => file.includes(`${path.sep}examples${path.sep}`) && file.includes(`${path.sep}contracts${path.sep}`) && file.endsWith('.json'))) {
   const schemaName = `${path.basename(file, '.json')}.schema.json`;
-  const schemaFile = path.join(supportRoot, 'contracts', schemaName);
+  const schemaFile = path.join(supportRoot, 'spec', 'contracts', schemaName);
   if (!fs.existsSync(schemaFile)) { fail(file, `missing contract schema: ${schemaName}`); continue; }
   let data;
   try { data = JSON.parse(read(file)); } catch (error) { fail(file, `invalid JSON: ${error.message}`); continue; }
