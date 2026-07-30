@@ -11,6 +11,10 @@ Use this repository as a GitHub template, then make the resulting completed play
 3. Replace every `[placeholder]` with evidence, an owner, or an explicit decision.
 4. Keep the root concise. Agents load it first and load only indexed files relevant to their task.
 
+## Filled example and sources
+
+[`examples/northstar/`](examples/northstar/) is a complete fictional playbook mirroring every template module. [`examples/REFERENCES.md`](examples/REFERENCES.md) maps every module to a public GitHub reference implementation and explains what to study.
+
 ## Package layout
 
 ```text
