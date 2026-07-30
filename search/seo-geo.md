@@ -21,3 +21,9 @@ last_validated: "[YYYY-MM-DD]"
 - Cite original evidence close to material claims.
 - Use structured data only when it matches visible page content.
 - Do not create pages solely to target keywords or AI summaries.
+
+## Technical delivery requirements
+
+- Page title, description, canonical URL, indexability, author/owner, and reviewed date: [record in `delivery/publication-contract.md`].
+- Locale URL/canonical and `hreflang` policy: [rule].
+- Structured-data type and owner: [rule].

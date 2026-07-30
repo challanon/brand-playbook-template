@@ -30,11 +30,29 @@ experimentation/             # A/B-test protocol and results
 evidence/                    # sources and metrics
 context/                     # narrative only; load only on request
 agents/                      # reusable agent brief
+delivery/                    # CMS-agnostic publication records
+locales/                     # market and language overrides
+media/                       # video-production briefs and review gates
+schema/                      # playbook metadata schemas
+tools/                       # local validation utility
 ```
 
 `seo-geo`, `journey`, `experimentation`, and `agent-brief` are custom file types. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
 
 Use [`agents/context-packs.md`](agents/context-packs.md) to select the minimal relevant files for common tasks without copying their contents.
+
+## Validate a completed playbook
+
+```sh
+npm ci --prefix tools
+node tools/validate.js .
+```
+
+Validation checks indexed files, root/secondary frontmatter, brand and file-type consistency, and JSON design tokens. The included GitHub Action runs the same check on pushes and pull requests.
+
+## Tool-agnostic delivery
+
+[`delivery/publication-contract.md`](delivery/publication-contract.md) defines the content record an agent must prepare before a CMS handoff. A CMS-specific adapter may map that record to fields, but the playbook itself remains portable.
 
 ## Principles
 

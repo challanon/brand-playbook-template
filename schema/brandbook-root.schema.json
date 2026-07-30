@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand playbook root metadata",
+  "type": "object",
+  "required": ["standard", "spec_version", "brand", "markets", "languages", "default_language", "version", "last_validated", "files"],
+  "properties": {
+    "standard": { "const": "brandbook.md" },
+    "spec_version": { "type": "string" },
+    "brand": { "type": "object", "required": ["name", "slug", "owner"] },
+    "markets": { "type": "array", "minItems": 1 },
+    "languages": { "type": "array", "minItems": 1 },
+    "default_language": { "type": "string" },
+    "version": { "type": "string" },
+    "last_validated": { "type": ["string", "object"] },
+    "files": { "type": "array", "items": { "type": "object", "required": ["path", "type", "summary"] } }
+  }
+}

@@ -16,3 +16,6 @@ Always load `BRANDBOOK.md` first.
 | Demo landing page | Editorial pack + conversion journeys | One CTA and an explicit setup-expectations section |
 | Product screenshot brief | Anchor rules, visual identity, messaging | Permission-safe brief; no customer data or unlabelled charts |
 | Demo-form experiment | Anchor rules, conversion journeys, experiment register, evidence | Hypothesis, qualified-demo metric, consent/accessibility guardrails |
+| Activation video | Anchor rules, data handling, visual identity, asset register, video production | Rights-safe, captioned scene brief |
+
+For CMS handoff, also load the publication contract. For GB or NL work, load market overrides.

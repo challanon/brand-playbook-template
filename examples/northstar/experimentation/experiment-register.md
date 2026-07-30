@@ -13,6 +13,7 @@ last_validated: 2026-07-30
 - Primary metric: qualified demo completion rate.
 - Guardrails: form abandonment, consent acceptance, and accessibility errors.
 - Measurement: use production analytics for the decision; use local checks only to catch implementation defects.
+- Allocation/stopping: split eligible traffic evenly; do not stop before the pre-agreed sample or a safety/consent issue.
 - Decision rule: ship only if the primary metric improves without a guardrail regression, then record whether the outcome applies only to this audience and page.
 
 | Outcome | Decision | Evidence |

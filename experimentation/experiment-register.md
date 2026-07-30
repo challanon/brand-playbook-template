@@ -14,6 +14,7 @@ last_validated: "[YYYY-MM-DD]"
 - Primary metric: [definition]
 - Guardrails: [metrics that must not worsen]
 - Variants, audience, exclusions, minimum duration/sample: [defined before launch]
+- Allocation and stopping rule: [randomisation/allocation and conditions to stop early]
 - Decision rule: [ship, stop, retest]
 
 ## Results

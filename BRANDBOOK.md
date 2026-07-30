@@ -18,12 +18,18 @@ files:
   - path: assets/visual-identity.md
     type: visual-identity
     summary: "Visual tokens, imagery direction, and visual anti-patterns"
+  - path: assets/asset-register.md
+    type: asset-register
+    summary: "Asset rights, approval, expiry, and AI-use permissions"
   - path: governance/anchor-rules.md
     type: governance
     summary: "Non-negotiable brand and approval rules"
   - path: governance/compliance.md
     type: compliance
     summary: "Claims, disclosure, accessibility, and escalation rules"
+  - path: governance/data-handling.md
+    type: data-handling
+    summary: "Data classification and external-AI handling rules"
   - path: voice/verbal-identity.md
     type: voice
     summary: "Voice rules with do/don't examples"
@@ -42,6 +48,15 @@ files:
   - path: experimentation/experiment-register.md
     type: experimentation
     summary: "Experiment protocol, outcomes, and decisions"
+  - path: delivery/publication-contract.md
+    type: publication-contract
+    summary: "Tool-agnostic content record and approval contract"
+  - path: locales/market-overrides.md
+    type: locale
+    summary: "Market and language overrides"
+  - path: media/video-production.md
+    type: video-production
+    summary: "Tool-agnostic video brief and review contract"
   - path: evidence/sources-and-metrics.md
     type: evidence
     summary: "Approved sources, metrics, and freshness rules"
@@ -90,14 +105,19 @@ files:
 | File | Type | When to load |
 | --- | --- | --- |
 | `assets/visual-identity.md` | visual-identity | Design, creative, and image-prompt work |
+| `assets/asset-register.md` | asset-register | Selecting or generating approved assets |
 | `governance/anchor-rules.md` | governance | All public-facing work |
 | `governance/compliance.md` | compliance | Claims, publication, review |
+| `governance/data-handling.md` | data-handling | Any task involving data or external AI |
 | `voice/verbal-identity.md` | voice | Writing and creative work |
 | `messaging/positioning-and-pillars.md` | messaging | Strategy, content, and campaigns |
 | `audience/audience-and-intent.md` | audience | Planning and messaging |
 | `search/seo-geo.md` | seo-geo | Search/discoverability work |
 | `journey/conversion-journeys.md` | journey | UX and conversion work |
 | `experimentation/experiment-register.md` | experimentation | Tests and optimisation |
+| `delivery/publication-contract.md` | publication-contract | Preparing CMS-agnostic delivery records |
+| `locales/market-overrides.md` | locale | Market or language-specific work |
+| `media/video-production.md` | video-production | Video planning, generation, or review |
 | `evidence/sources-and-metrics.md` | evidence | Claims and measurement |
 | `agents/agent-brief.md` | agent-brief | Routine agent tasks |
 | `agents/context-packs.md` | context-packs | Selecting minimal task context |

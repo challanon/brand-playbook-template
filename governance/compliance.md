@@ -13,6 +13,7 @@ last_validated: "[YYYY-MM-DD]"
 - [ ] Claims are accurate, current, and sourced.
 - [ ] Required disclosures and approvals are present.
 - [ ] Content meets accessibility and consent requirements.
+- [ ] Source URLs, checked dates, and approval status are recorded in the delivery record.
 - [ ] Sensitive, legal, financial, medical, security, or comparative claims have been escalated where required.
 
 ## Escalation triggers
