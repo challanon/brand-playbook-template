@@ -7,7 +7,7 @@
     "standard": { "const": "brandbook.md" },
     "type": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
     "brand": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
-    "version": { "type": "string" },
-    "last_validated": { "type": ["string", "object"] }
+    "version": { "type": "string", "pattern": "^0|[1-9][0-9]*\\.[0-9]+\\.[0-9]+(?:[-+][0-9A-Za-z.-]+)?$" },
+    "last_validated": { "type": "string", "format": "date" }
   }
 }

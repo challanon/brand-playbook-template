@@ -2,6 +2,13 @@
   "name": "brand-playbook-tools",
   "private": true,
   "version": "0.1.0",
-  "scripts": { "validate": "node validate.js .." },
-  "dependencies": { "yaml": "^2.8.1" }
+  "scripts": {
+    "validate": "node validate.js ..",
+    "test:fixtures": "node validate-fixtures.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.8.1"
+  }
 }

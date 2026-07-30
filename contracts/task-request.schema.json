@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "task_type", "brand_slug", "locale", "input", "authorised_actions"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "task_type": { "type": "string", "enum": ["draft", "review", "creative-brief", "video-brief", "experiment"] },
+    "brand_slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "locale": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$" },
+    "input": { "type": "object" },
+    "authorised_actions": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["read", "draft", "review"] } }
+  }
+}

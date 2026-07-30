@@ -1,0 +1,7 @@
+{
+  "request_id": "TASK-001",
+  "decision": "require-approval",
+  "allowed_actions": ["read", "draft", "review"],
+  "reason": "The draft contains a performance-related claim.",
+  "policy_version": "1.0.0"
+}

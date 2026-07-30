@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["task_id", "status", "findings", "requires_human_approval"],
+  "properties": {
+    "task_id": { "type": "string" },
+    "status": { "type": "string", "enum": ["pass", "fail", "needs-review"] },
+    "findings": { "type": "array", "items": { "type": "object", "required": ["severity", "message"] } },
+    "requires_human_approval": { "type": "boolean" }
+  }
+}

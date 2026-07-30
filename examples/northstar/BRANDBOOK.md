@@ -1,6 +1,7 @@
 ---
 standard: brandbook.md
 spec_version: "0.1"
+profile: production
 brand:
   name: Northstar Analytics
   slug: northstar-analytics
@@ -45,3 +46,5 @@ Northstar helps product teams at growing B2B SaaS companies see where users lose
 - **AR-03.** Never use customer data or screenshots without written permission. Rationale: privacy is part of the product promise.
 
 Load the root first, `governance/anchor-rules.md` for all public work, and only the specialist files relevant to the task. The story in `context/` is optional.
+
+This package opts into the Production Profile. Typed execution examples are in `contracts/`; a runtime policy gateway must authorise any action beyond reading, drafting, or review.

@@ -1,0 +1,9 @@
+{
+  "id": "PUB-001",
+  "content_type": "article",
+  "locale": "en-GB",
+  "status": "in-review",
+  "sources": ["ACT-01"],
+  "asset_ids": ["NS-UI-01"],
+  "approval": { "required": true }
+}

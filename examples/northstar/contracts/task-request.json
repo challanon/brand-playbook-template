@@ -1,0 +1,8 @@
+{
+  "id": "TASK-001",
+  "task_type": "draft",
+  "brand_slug": "northstar-analytics",
+  "locale": "en-GB",
+  "input": { "topic": "measuring product activation" },
+  "authorised_actions": ["read", "draft"]
+}

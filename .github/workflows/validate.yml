@@ -17,3 +17,4 @@ jobs:
           cache-dependency-path: tools/package-lock.json
       - run: npm ci --prefix tools
       - run: node tools/validate.js .
+      - run: npm run test:fixtures --prefix tools

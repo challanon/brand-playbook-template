@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "claim", "source_url", "checked_date", "owner", "status"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Z][A-Z0-9-]+$" },
+    "claim": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "checked_date": { "type": "string", "format": "date" },
+    "owner": { "type": "string" },
+    "status": { "type": "string", "enum": ["current", "expired", "withdrawn"] }
+  }
+}

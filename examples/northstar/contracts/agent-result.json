@@ -1,0 +1,8 @@
+{
+  "task_id": "TASK-001",
+  "status": "needs-review",
+  "output": { "title": "How to measure product activation" },
+  "evidence_ids": ["ACT-01"],
+  "rule_check": [{ "rule_id": "AR-01", "status": "pass" }],
+  "requires_human_approval": true
+}

@@ -35,6 +35,9 @@ locales/                     # market, language, and legal overrides
 media/                       # video-production briefs and review gates
 schema/                      # playbook metadata schemas
 tools/                       # local validation utility
+profiles/                    # optional production-grade extensions
+contracts/                   # typed, tool-agnostic runtime contracts
+evals/                       # validator fixtures and conformance tests
 ```
 
 The template uses custom file types—`seo-geo`, `journey`, `experimentation`, `agent-brief`, `context-packs`, `asset-register`, `data-handling`, `publication-contract`, `locale`, and `video-production`. The brandbook.md standard permits custom types, while its root file index keeps them discoverable to people and tooling.
@@ -49,6 +52,12 @@ node tools/validate.js .
 ```
 
 Validation checks indexed files, root/secondary frontmatter, brand and file-type consistency, and JSON design tokens. The included GitHub Action runs the same check on pushes and pull requests.
+
+## Optional Production Profile
+
+The Core template stays Markdown-first and portable. Teams that need stricter platform consumption can opt into [`profiles/production/`](profiles/production/) by adding `profile: production` to their root metadata.
+
+The profile adds a versioned [type registry](profiles/production/type-registry.md), schema-backed validation, fixtures, and the typed [contracts](contracts/) used between callers, agents, reviewers, policy gateways, and CMS adapters. It does not grant an agent permission to publish or access data; those decisions remain with the consuming runtime.
 
 ## Tool-agnostic delivery
 

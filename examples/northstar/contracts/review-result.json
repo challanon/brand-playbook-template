@@ -1,0 +1,6 @@
+{
+  "task_id": "TASK-001",
+  "status": "needs-review",
+  "findings": [{ "severity": "medium", "message": "Confirm the activation definition owner." }],
+  "requires_human_approval": true
+}

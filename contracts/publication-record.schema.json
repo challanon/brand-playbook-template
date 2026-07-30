@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "content_type", "locale", "status", "sources", "asset_ids", "approval"],
+  "properties": {
+    "id": { "type": "string" },
+    "content_type": { "type": "string" },
+    "locale": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "in-review", "approved", "published", "rejected"] },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "asset_ids": { "type": "array", "items": { "type": "string" } },
+    "approval": { "type": "object", "required": ["required"] }
+  }
+}

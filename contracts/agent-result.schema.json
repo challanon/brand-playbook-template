@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["task_id", "status", "output", "evidence_ids", "rule_check", "requires_human_approval"],
+  "properties": {
+    "task_id": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "enum": ["complete", "blocked", "needs-review"] },
+    "output": { "type": "object" },
+    "evidence_ids": { "type": "array", "items": { "type": "string" } },
+    "rule_check": { "type": "array", "items": { "type": "object", "required": ["rule_id", "status"] } },
+    "requires_human_approval": { "type": "boolean" }
+  }
+}
