@@ -21,6 +21,8 @@ files:
   - {path: governance/anchor-rules.md, type: governance, summary: "Hard rules"}
   - {path: governance/compliance.md, type: compliance, summary: "Publication checks"}
   - {path: governance/data-handling.md, type: data-handling, summary: "Data and external-AI rules"}
+  - {path: governance/untrusted-inputs.md, type: untrusted-inputs, summary: "Prompt-injection handling"}
+  - {path: governance/change-log.md, type: change-log, summary: "Record lifecycle"}
   - {path: voice/verbal-identity.md, type: voice, summary: "Writing rules"}
   - {path: messaging/positioning-and-pillars.md, type: messaging, summary: "Positioning and proof"}
   - {path: audience/audience-and-intent.md, type: audience, summary: "Audience needs"}

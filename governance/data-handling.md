@@ -15,3 +15,5 @@ last_validated: "[YYYY-MM-DD]"
 | Restricted | Customer data, credentials, unreleased plans | No | Do not upload, quote, or embed. |
 
 Record the source, classification, and approval for every external asset or data input. Escalate uncertainty before sharing data with a tool.
+
+Use stable IDs for records: claims `CLM-*`, assets `AST-*`, experiments `EXP-*`, and approvals `APR-*`.

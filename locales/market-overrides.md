@@ -12,4 +12,4 @@ last_validated: "[YYYY-MM-DD]"
 | --- | --- | --- | --- | --- |
 | [market-language] | [terms] | [rules] | [wording/link] | [owner] |
 
-An agent must not apply one market's claims, tagline, pricing, or legal wording to another market without an explicit override.
+An agent must not apply one market's claims, assets, tagline, pricing, or legal wording to another market without an explicit override. Record the applicable market on every `CLM-*`, `AST-*`, and publication record.

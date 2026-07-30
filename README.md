@@ -59,6 +59,8 @@ The Core template stays Markdown-first and portable. Teams that need stricter pl
 
 The profile adds a versioned [type registry](profiles/production/type-registry.md), schema-backed validation, fixtures, and the typed [contracts](contracts/) used between callers, agents, reviewers, policy gateways, and CMS adapters. It does not grant an agent permission to publish or access data; those decisions remain with the consuming runtime.
 
+The governance tranche adds lifecycle IDs, asset/locale scope, untrusted-input rules, and portable [safety evaluation cases](evals/safety-cases.md).
+
 ## Tool-agnostic delivery
 
 [`delivery/publication-contract.md`](delivery/publication-contract.md) defines the content record an agent must prepare before a CMS handoff. A CMS-specific adapter may map that record to fields, but the playbook itself remains portable.

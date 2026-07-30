@@ -30,6 +30,12 @@ files:
   - path: governance/data-handling.md
     type: data-handling
     summary: "Data classification and external-AI handling rules"
+  - path: governance/untrusted-inputs.md
+    type: untrusted-inputs
+    summary: "Instruction hierarchy and prompt-injection handling"
+  - path: governance/change-log.md
+    type: change-log
+    summary: "Effective, superseded, and retired policy changes"
   - path: voice/verbal-identity.md
     type: voice
     summary: "Voice rules with do/don't examples"
@@ -109,6 +115,8 @@ files:
 | `governance/anchor-rules.md` | governance | All public-facing work |
 | `governance/compliance.md` | compliance | Claims, publication, review |
 | `governance/data-handling.md` | data-handling | Any task involving data or external AI |
+| `governance/untrusted-inputs.md` | untrusted-inputs | Any task using external research or uploads |
+| `governance/change-log.md` | change-log | Auditing current policy or provenance |
 | `voice/verbal-identity.md` | voice | Writing and creative work |
 | `messaging/positioning-and-pillars.md` | messaging | Strategy, content, and campaigns |
 | `audience/audience-and-intent.md` | audience | Planning and messaging |

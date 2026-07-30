@@ -8,6 +8,6 @@ last_validated: "[YYYY-MM-DD]"
 
 # Asset register
 
-| Asset ID | File/URL | Owner | Rights/expiry | Approved use | AI use | Restrictions |
+| Asset ID | File/URL/DAM ID | Rights/expiry | Markets | Transformations | AI use | Restrictions |
 | --- | --- | --- | --- | --- | --- | --- |
-| [asset-id] | [path] | [owner] | [licence/date] | [channels/markets] | [allowed/no] | [people, trademarks, data] |
+| AST-[id] | [path/checksum] | [licence/date] | [markets] | [allowed/no] | [reference/derivative/no] | [people, trademarks, data] |
