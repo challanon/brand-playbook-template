@@ -16,7 +16,9 @@ Use this repository as a GitHub template, then make the resulting completed play
 ```text
 BRANDBOOK.md                 # concise root/router and machine-readable index
 governance/                  # hard rules and compliance
+assets/                      # visual identity and approved design assets
 voice/                       # verbal identity and examples
+messaging/                   # positioning, proof, and messaging pillars
 audience/                    # audience, needs, and search intent
 search/                      # SEO/GEO rules
 journey/                     # conversion journey and instrumentation

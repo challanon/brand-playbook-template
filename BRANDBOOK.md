@@ -15,6 +15,9 @@ last_validated: "[YYYY-MM-DD]"
 review_cycle: P3M
 confidentiality: internal
 files:
+  - path: assets/visual-identity.md
+    type: visual-identity
+    summary: "Visual tokens, imagery direction, and visual anti-patterns"
   - path: governance/anchor-rules.md
     type: governance
     summary: "Non-negotiable brand and approval rules"
@@ -24,6 +27,9 @@ files:
   - path: voice/verbal-identity.md
     type: voice
     summary: "Voice rules with do/don't examples"
+  - path: messaging/positioning-and-pillars.md
+    type: messaging
+    summary: "Positioning, category, proof points, and messaging pillars"
   - path: audience/audience-and-intent.md
     type: audience
     summary: "Audience needs, objections, and search intent"
@@ -58,6 +64,10 @@ files:
 
 [Three operational attributes.] See [voice/verbal-identity.md](voice/verbal-identity.md) for examples.
 
+## Positioning and visual identity
+
+[One-line positioning statement.] See [messaging/positioning-and-pillars.md](messaging/positioning-and-pillars.md) and [assets/visual-identity.md](assets/visual-identity.md).
+
 ## Anchor rules
 
 - **AR-01.** Never make an outcome claim without a current, citable source. Rationale: [why].
@@ -76,9 +86,11 @@ files:
 
 | File | Type | When to load |
 | --- | --- | --- |
+| `assets/visual-identity.md` | visual-identity | Design, creative, and image-prompt work |
 | `governance/anchor-rules.md` | governance | All public-facing work |
 | `governance/compliance.md` | compliance | Claims, publication, review |
 | `voice/verbal-identity.md` | voice | Writing and creative work |
+| `messaging/positioning-and-pillars.md` | messaging | Strategy, content, and campaigns |
 | `audience/audience-and-intent.md` | audience | Planning and messaging |
 | `search/seo-geo.md` | seo-geo | Search/discoverability work |
 | `journey/conversion-journeys.md` | journey | UX and conversion work |
