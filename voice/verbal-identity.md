@@ -8,6 +8,18 @@ last_validated: "[YYYY-MM-DD]"
 
 # Verbal identity
 
+## Purpose and when to load
+
+Define repeatable writing behaviour, not vague adjectives. Load for any public-facing writing, scripts, prompts, and editorial review. Voice remains recognisable; tone adjusts to the reader's situation.
+
+## Voice attributes
+
+| Attribute | What it means in practice | Use when | Avoid becoming | Evidence/example |
+| --- | --- | --- | --- | --- |
+| [attribute] | [sentence-level behaviour] | [context] | [undesired extreme] | [approved example] |
+
+Describe observable choices: sentence length, certainty, terminology, structure, and level of detail. “Friendly” is not enough; “use direct second-person sentences and explain jargon once” is actionable.
+
 | Do | Don't |
 | --- | --- |
 | [Specific approved behaviour/example] | [Specific prohibited behaviour/example] |
@@ -18,6 +30,17 @@ last_validated: "[YYYY-MM-DD]"
 - Prefer: [approved terms]
 - Avoid: [banned terms, jargon, clichés]
 - Locale and reading level: [rule]
+
+## Writing mechanics
+
+| Area | Default | Exception / owner |
+| --- | --- | --- |
+| Reading level | [plain-language target] | [technical/legal content] |
+| Point of view | [you/we/third person] | [rule] |
+| Sentence and paragraph length | [guidance] | [rule] |
+| Numbers, dates, and units | [style] | [locale override] |
+| Capitalisation and punctuation | [style] | [product/legal names] |
+| Accessibility | [descriptive links, headings, alt text] | [rule] |
 
 ## Tone by context
 
@@ -44,6 +67,16 @@ Why it works: [specific rule or attribute demonstrated].
 
 Why it fails: [specific rule or attribute violated].
 
-> [Short off-brand example.]
+## Review questions
 
-Why it fails: [specific rule or attribute violated].
+- Does the first sentence give the reader the useful answer or next action?
+- Are claims specific, sourced, and calibrated to the evidence?
+- Does the wording respect the reader's knowledge and situation without jargon, hype, or false familiarity?
+- Are links, headings, lists, and media descriptions accessible?
+
+## Agent rules
+
+- May edit for the recorded voice and localise only through an approved market override.
+- Must ask when a term is not in the glossary, a sensitive issue needs a different tone, or an example conflicts with an anchor rule.
+- [ ] Each attribute has an operational definition and approved/anti-example.
+- [ ] Terms, reading level, and accessible writing defaults are recorded.

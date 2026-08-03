@@ -11,9 +11,37 @@ Use this repository as a GitHub template, then make the resulting completed play
 3. Replace every `[placeholder]` with evidence, an owner, or an explicit decision.
 4. Keep the root concise. Agents load it first and load only indexed files relevant to their task.
 
+## How to fill the templates
+
+Each operational template explains its purpose, required decisions, research prompts, agent boundaries, and completion check. A completed entry should be specific enough for a new teammate or agent to use without guessing.
+
+Read the sections as distinct layers: “Purpose and when to load” tells a person or agent when the file applies; tables and prompts are for the playbook owner; “Agent rules” define execution boundaries; “Completion check” is the reviewer gate. The fictional examples are learning material, not live brand instructions.
+
+- Replace placeholders with a decision, evidence, or an explicit "Unknown — owner/date" follow-up; never leave an important field ambiguous.
+- Record the source, owner, market scope, and review date beside claims, metrics, policies, and assets where relevant.
+- Use stable IDs: CLM-* claims, AST-* assets, EXP-* experiments, and APR-* approvals.
+- An agent may summarise cited facts and apply recorded rules. It must ask or escalate for a new claim, a material inference, restricted data, a new market, a rights decision, or publication authority.
+- Treat linked external resources as methods to study, not prose to copy. Check licences before reusing material.
+
 ## Filled example and sources
 
 [`examples/northstar/`](examples/northstar/) is a complete fictional playbook mirroring every template module. [`examples/REFERENCES.md`](examples/REFERENCES.md) maps every module to a public GitHub reference implementation and explains what to study.
+
+## Learning path
+
+The fictional Northstar package has a concise strong-versus-weak entry for every module in examples/northstar/TEACHING-NOTES.md. The comparison is centralised rather than repeated in every operational file, keeping routine agent context small.
+
+## Recommended completion order
+
+1. Establish the root identity and non-negotiable anchor rules.
+2. Define priority audiences and record the evidence that supports their needs.
+3. Decide positioning, messages, and verbal identity.
+4. Set visual, asset, data, compliance, and market boundaries.
+5. Map search questions and customer journeys.
+6. Define measurement and experiments only after journey outcomes are clear.
+7. Prepare agent briefs, context packs, and publication records for delivery.
+
+At each stage, complete its check before moving on. Do not draft market-specific or public content until the relevant evidence, governance, and locale decisions exist.
 
 ## Package layout
 

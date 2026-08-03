@@ -8,6 +8,13 @@ last_validated: "[YYYY-MM-DD]"
 
 # Context packs
 
+## Selection rules
+
+- Add governance/compliance.md for claims or publication, data-handling.md for non-public data or external tools, and locales/market-overrides.md for a market-specific task.
+- Add evidence/sources-and-metrics.md whenever a task creates, reviews, or reports a factual claim or metric.
+- Treat a pack as a minimum: add only the module that resolves a material task risk. Do not preload context/story.md unless narrative background is explicitly requested.
+- When two sources conflict, follow the instruction hierarchy in governance/untrusted-inputs.md and escalate the conflict rather than averaging it away.
+
 Load `BRANDBOOK.md` first for every task. Then load the smallest pack that can safely complete the task. Do not copy module content into packs; the files listed here remain the source of truth.
 
 | Task | Load in addition to the root | Expected output/check |

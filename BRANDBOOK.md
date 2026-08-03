@@ -76,6 +76,10 @@ files:
 
 # [Brand name]: BRANDBOOK.md
 
+## Purpose and completion rule
+
+This is the concise, mandatory router for people and agents. Keep it to stable identity, primary audience, current positioning, anchor rules, and the file index. Put detailed guidance and volatile records in the indexed modules; do not duplicate them here.
+
 ## Brand in one paragraph
 
 [Who we help, the outcome we create, why the claim is credible, and how we differ.]
@@ -105,6 +109,13 @@ files:
 3. Load the indexed file(s) relevant to the task; do not preload the full package.
 4. Treat `AR-*` rules as hard constraints and cite rule IDs in reviews.
 5. Load `context/` only for explicitly requested narrative background.
+
+## Root completion check
+
+- [ ] Brand metadata, markets, languages, owner, version, and validation date are complete.
+- [ ] The one-paragraph brand summary, primary audience, voice, and positioning agree with their source modules.
+- [ ] Every indexed path exists, has matching type/brand frontmatter, and has a useful loading description.
+- [ ] Root anchor rules are mirrored in governance/anchor-rules.md and use stable IDs.
 
 ## File index
 

@@ -40,7 +40,17 @@ const rootFiles = walk(root).filter((file) => path.basename(file) === 'BRANDBOOK
 if (!rootFiles.length) fail(root, 'no BRANDBOOK.md found');
 for (const file of rootFiles) {
   const data = parse(file);
-  if (!data || template(data?.brand?.slug)) continue;
+  if (!data) continue;
+  if (template(data?.brand?.slug)) {
+    const teachingNotes = path.join(path.dirname(file), 'examples', 'northstar', 'TEACHING-NOTES.md');
+    if (!fs.existsSync(teachingNotes)) fail(file, 'teaching companion missing: examples/northstar/TEACHING-NOTES.md');
+    else {
+      const teachingText = read(teachingNotes);
+      const teachingRows = (teachingText.match(/\n\| [^|]+ \|/g) || []).length;
+      if (teachingRows < (data.files || []).length + 1) fail(teachingNotes, 'teaching companion has fewer module rows than the root index');
+    }
+    continue;
+  }
   if (!validateRoot(data)) { fail(file, `root schema: ${schemaErrors(validateRoot)}`); continue; }
   if (!data.languages.includes(data.default_language)) fail(file, 'default_language must be listed in languages');
   const seenPaths = new Set();
