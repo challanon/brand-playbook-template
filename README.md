@@ -31,6 +31,8 @@ Read the sections as distinct layers: “Purpose and when to load” tells a per
 
 The fictional Northstar package has a concise strong-versus-weak entry for every module in examples/northstar/TEACHING-NOTES.md. The comparison is centralised rather than repeated in every operational file, keeping routine agent context small.
 
+For teams adopting the package, see docs/progressive-adoption.md. It defines the minimum safe module set for drafting, publication, growth work, and scaled multi-agent operations.
+
 ## Recommended completion order
 
 1. Establish the root identity and non-negotiable anchor rules.
